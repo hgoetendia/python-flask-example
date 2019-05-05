@@ -29,7 +29,7 @@ def server(local_port):
                 return Response(json.dumps(ret), mimetype='application/json')
             
             except Exception as e:
-                resp =   {"messageid": data['id'], "status": "FAIL" }
+                resp =   {"hello": "world", "status": "FAIL" }
                 return str(resp)
             
         return 'unknown'
